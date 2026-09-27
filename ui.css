@@ -1,0 +1,44 @@
+:root {
+	/* LIGHT : default */
+	--dg-bg: #efe5e5;
+	--dg-bg-softer: #e7dede;
+}
+
+@media (prefers-color-scheme: dark) {
+	/* DARK : auto based on system */
+	:root {
+		--dg-bg: #1c1c1e;
+		--dg-bg-softer: #222224;
+		--dg-bg-1: #272729;
+		--dg-bg-2: #343436;
+		--dg-bg-3: #404042;
+		--dg-bg-4: #616162;
+		--dg-fg: #ffffff;
+		--dg-fg-1: #f7f7f7;
+		--dg-fg-2: #bbbbbc;
+		--dg-gray-0: #89898a;
+		--dg-gray-1: #a2a2a3;
+		--dg-gray-2: #bbbbbc;
+		--dg-grey-dim: #656566;
+		--dg-accent: #0a84ff;
+		--dg-accent-soft: #0f65bc;
+		--dg-accent-muted: #519ae4;
+		--dg-danger: #fb4934;
+		--dg-danger-soft: #fb48345d;
+		--dg-success: #48f335;
+		--dg-success-soft: #48f3355d;
+		--dg-gold: #fabd2f;
+		--dg-shadow: 0 0 0;
+		--dg-glass-a1: 0.58;
+		--dg-glass-a2: 0.46;
+		--dg-glass-a3: 0.32;
+		--dg-glass-a4: 0.22;
+		--dg-lh: 1.70; /* line height */
+		--dg-fs: 18px; /* font size */
+		--dg-raduis-0: 0.75rem; /* button */
+		--dg-radius-1: 1.25rem; /* card */
+		--dg-interface: ;
+		--dg-title: ;
+		--dg-price: ;
+	}
+}
