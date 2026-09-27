@@ -1,0 +1,15 @@
+@import url('./ui.css');
+
+*, *::before, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--dg-interface);
+    line-height: var(--dg-lh);
+    font-size: var(--dg-fs);
+    background: var(--dg-bg-softer);
+    color: var(--dg-fg);
+}
