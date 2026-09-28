@@ -1,7 +1,11 @@
-:root {
+:root[data-theme="light"] {
 	/* LIGHT : default */
 	--dg-bg: #efe5e5;
 	--dg-bg-softer: #e7dede;
+}
+
+:root[data-theme="dark"] {
+	--dg-bg: #1c1c1e;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,8 +20,8 @@
 		--dg-fg: #ffffff;
 		--dg-fg-1: #f7f7f7;
 		--dg-fg-2: #bbbbbc;
-		--dg-gray-0: #89898a;
-		--dg-gray-1: #a2a2a3;
+		--dg-grey-0: #89898a; /* link color */
+		--dg-grey-1: #a2a2a3;
 		--dg-gray-2: #bbbbbc;
 		--dg-grey-dim: #656566;
 		--dg-accent: #0a84ff;
@@ -37,8 +41,31 @@
 		--dg-fs: 18px; /* font size */
 		--dg-raduis-0: 0.75rem; /* button */
 		--dg-radius-1: 1.25rem; /* card */
+		--dg-p-0: 0.5rem 0.75rem; /* button primary */
 		--dg-interface: ;
 		--dg-title: ;
 		--dg-price: ;
 	}
+}
+
+button {
+	display: block;
+	appearance: none;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	font-size: var(--dg-fs);
+}
+
+a {
+	color: var(--dg-grey-0);
+	transition: color 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
+
+	&:hover {
+		color: var(--dg-fg-1);
+	}
+}
+
+p {
+	color: var(--dg-fg-2);
 }
