@@ -1,7 +1,39 @@
 :root[data-theme="light"] {
 	/* LIGHT : default */
-	--dg-bg: #efe5e5;
-	--dg-bg-softer: #e7dede;
+	--dg-bg: #ffffff;
+	--dg-bg-softer: #fafafa;
+	--dg-bg-1: #f4f4f4;
+	--dg-bg-2: #e8e8e8;
+	--dg-bg-3: #dbdbdb;
+	--dg-bg-4: #bbbbbb;
+	--dg-fg: #252527;
+	--dg-fg-1: #1d1d1f;
+	--dg-fg-2: #616162;
+	--dg-grey-0: #939393;
+	--dg-grey-1: #7a7a7b;
+	--dg-grey-2: #616162;
+	--dg-grey-dim: #b7b7b7;
+	--dg-accent: #007aff;
+	--dg-accent-soft: #4da2ff;
+	--dg-accent-muted: #2770c0;
+	--dg-danger: #c14a4a;
+	--dg-danger-soft: #c14a4a5a;
+	--dg-success: #76f168;
+	--dg-success-soft: #76f1685a;
+	--dg-gold: #f5c24a;
+	--dg-shadow: 17 17 19;
+	--dg-glass-a1: 0.62;
+	--dg-glass-a2: 0.5;
+	--dg-glass-a3: 0.35;
+	--dg-glass-a4: 0.25;
+	--dg-lh: 1.70;
+	--dg-fs: 18px;
+	--dg-raduis-0: 0.75rem;
+	--dg-radius-1: 1.25rem;
+	--dg-p-0: 0.5rem 0.75rem;
+	--dg-interface: ;
+	--dg-title: ;
+	--dg-price: ;
 }
 
 :root[data-theme="dark"] {
@@ -17,12 +49,12 @@
 		--dg-bg-2: #343436;
 		--dg-bg-3: #404042;
 		--dg-bg-4: #616162;
-		--dg-fg: #ffffff;
+		--dg-fg: #ffffff; /* ink */
 		--dg-fg-1: #f7f7f7;
 		--dg-fg-2: #bbbbbc;
 		--dg-grey-0: #89898a; /* link color */
 		--dg-grey-1: #a2a2a3;
-		--dg-gray-2: #bbbbbc;
+		--dg-grey-2: #bbbbbc;
 		--dg-grey-dim: #656566;
 		--dg-accent: #0a84ff;
 		--dg-accent-soft: #0f65bc;
@@ -52,9 +84,26 @@ button {
 	display: block;
 	appearance: none;
 	border: none;
-	background: transparent;
-	cursor: pointer;
+	background: none;
+	border: none;
+	outline: none;
+	font: inherit;
+	color: inherit;
 	font-size: var(--dg-fs);
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+input {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	color: inherit;
 }
 
 a {
@@ -68,4 +117,12 @@ a {
 
 p {
 	color: var(--dg-fg-2);
+}
+
+h1, h2, h3 {
+	font-family: var(--dg-title);
+}
+
+ul {
+	list-style: none;
 }
